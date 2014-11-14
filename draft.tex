@@ -7,7 +7,7 @@
 \usepackage{graphicx}
 \usepackage{endfloat}
 \usepackage{amssymb}
-
+\usepackage{amsmath}
 
 %% THE NEXT TWO LINES INSERT THE PACKAGES FOR JASA FORMAT:
 \usepackage[default]{jasa_harvard}    % 	for formatting citations in text
@@ -112,9 +112,13 @@ Obtain Craḿer-Von-Mises statistics,
 uniform(0,1) CDF.
 Exclude the covariate corresponding to the smallest value in each criterion.
 
-
-
+The procedure will be terminated until the Line effect is excluded.  Then the final model will be used for differential expression analysis will be the model which has largest number of pvalue of Line effect less than 0.05.
 \section{Real Data Analysis}
+
+\begin{figure}
+\centering
+\includegraphics[scale = 0.2]{PlotG9P2PairedEndCBCpvalue05.pdf}
+\end{figure}
 
 \section{Simulation Justification based on Real Data}
 
